@@ -109,7 +109,7 @@ const showNextMsg = () => {
           instance[prop] = true;
         }
       });
-      document.body.appendChild(instance.$el);
+      document.querySelector('#app').appendChild(instance.$el);
 
       Vue.nextTick(() => {
         instance.visible = true;

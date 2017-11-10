@@ -116,7 +116,7 @@
             this.$refs.dialog.scrollTop = 0;
           });
           if (this.appendToBody) {
-            document.body.appendChild(this.$el);
+            document.querySelector('#app').appendChild(this.$el);
           }
         } else {
           this.$el.removeEventListener('scroll', this.updatePopper);
@@ -175,7 +175,7 @@
         this.rendered = true;
         this.open();
         if (this.appendToBody) {
-          document.body.appendChild(this.$el);
+          document.querySelector('#app').appendChild(this.$el);
         }
       }
     }

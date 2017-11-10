@@ -57,7 +57,7 @@ export default function calcTextareaHeight(
 ) {
   if (!hiddenTextarea) {
     hiddenTextarea = document.createElement('textarea');
-    document.body.appendChild(hiddenTextarea);
+    document.querySelector('#app').appendChild(hiddenTextarea);
   }
 
   let {

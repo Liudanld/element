@@ -29,7 +29,7 @@ const Notification = function(options) {
   }
   instance.id = id;
   instance.vm = instance.$mount();
-  document.body.appendChild(instance.vm.$el);
+  document.querySelector('#app').appendChild(instance.vm.$el);
   instance.vm.visible = true;
   instance.dom = instance.vm.$el;
   instance.dom.style.zIndex = PopupManager.nextZIndex();
